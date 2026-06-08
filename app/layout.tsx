@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Header } from "@/components/Header";
+import { SmoothScroll } from "@/components/SmoothScroll";
 
 export const metadata: Metadata = {
-  title: "Gorila Imports",
+  title: "Centro Especializado LIMADENTT | Odontologia Premium",
   description:
-    "Vitrine Gorila Imports com catálogo, carrinho e atendimento direto.",
-  metadataBase: new URL("https://gorilaimports.vendizap.com"),
+    "Centro especializado LIMADENTT. Dr. Weslen Lima. Cirurgias, harmonização orofacial, implantodontia, estética dental e odontologia para todas as idades.",
+  metadataBase: new URL("https://limadentt.com.br"),
   openGraph: {
-    title: "Gorila Imports",
-    description: "Catálogo online Gorila Imports.",
-    url: "https://gorilaimports.vendizap.com",
-    siteName: "Gorila Imports",
-    images: ["https://cdn.vendizap.com/vendizap-logos/1a261d674c847d39248e3c2272c3ba0e.webp"],
+    title: "Centro Especializado LIMADENTT",
+    description: "Odontologia premium com ênfase em cirurgias e harmonização orofacial.",
+    url: "https://limadentt.com.br",
+    siteName: "LIMADENTT",
+    images: ["/assets/limadentt-logo-gold.jpeg"],
     locale: "pt_BR",
     type: "website"
   }
@@ -20,7 +22,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR">
-      <body>{children}</body>
+      <body>
+        <SmoothScroll>
+          <Header />
+          {children}
+        </SmoothScroll>
+      </body>
     </html>
   );
 }
