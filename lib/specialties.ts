@@ -16,8 +16,8 @@ export type Specialty = {
   };
 };
 
-export const whatsappNumber = "5566992306879";
-export const whatsappDisplay = "66 99230-6879";
+export const whatsappNumber = "5566992837314";
+export const whatsappDisplay = "66 99283-7314";
 
 export const makeWhatsAppUrl = (message: string) => {
   return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;

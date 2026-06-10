@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Reveal } from "@/components/Reveal";
 import { WebGLHero } from "@/components/WebGLHero";
-import { makeWhatsAppUrl, specialties, whatsappDisplay } from "@/lib/specialties";
+import { makeWhatsAppUrl, specialties } from "@/lib/specialties";
 
 const whatsappUrl = makeWhatsAppUrl("Olá, gostaria de agendar uma consulta com o Dr. Weslen Lima na LIMADENTT.");
 
@@ -150,7 +150,7 @@ export default function Home() {
               <p className="eyebrow">Contato</p>
               <h2 className="display-title">Agende uma consulta com o Dr. Weslen Lima.</h2>
               <p>
-                Chame a equipe pelo WhatsApp {whatsappDisplay} e organize uma avaliação na LIMADENTT.
+                Chame a equipe pelo WhatsApp e organize uma avaliação na LIMADENTT.
               </p>
             </div>
             <a className="button-primary" href={whatsappUrl} target="_blank" rel="noopener noreferrer">

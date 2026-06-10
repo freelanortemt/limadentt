@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import { Reveal } from "@/components/Reveal";
 import { SpecialtyMedia } from "@/components/SpecialtyMedia";
-import { getSpecialty, makeWhatsAppUrl, specialties, whatsappDisplay } from "@/lib/specialties";
+import { getSpecialty, makeWhatsAppUrl, specialties } from "@/lib/specialties";
 
 type SpecialtyPageProps = {
   params: Promise<{ slug: string }>;
@@ -70,7 +70,7 @@ export default async function SpecialtyPage({ params }: SpecialtyPageProps) {
         <Reveal delay={0.12} className="sticky-contact">
           <h2>Agende sua avaliação</h2>
           <p>
-            Converse com a equipe LIMADENTT pelo WhatsApp {whatsappDisplay} e organize uma consulta com o Dr. Weslen Lima.
+            Converse com a equipe LIMADENTT pelo WhatsApp e organize uma consulta com o Dr. Weslen Lima.
           </p>
           <div className="hero-actions">
             <a className="button-primary w-full" href={whatsappUrl} target="_blank" rel="noopener noreferrer">
